@@ -31,7 +31,7 @@ const getNotes = () =>
     headers: {
       'Content-Type': 'application/json',
     },
-  });
+  })
 
 const saveNote = (note) =>
   fetch('/api/notes', {
@@ -43,6 +43,7 @@ const saveNote = (note) =>
   });
 
 const deleteNote = (id) =>
+// console.log('index.js tried to delete a note');
   fetch(`/api/notes/${id}`, {
     method: 'DELETE',
     headers: {
@@ -71,6 +72,7 @@ const handleNoteSave = () => {
     title: noteTitle.value,
     text: noteText.value,
   };
+  console.log(`handleNoteSave fired with ${newNote}`);
   saveNote(newNote).then(() => {
     getAndRenderNotes();
     renderActiveNote();
@@ -118,6 +120,7 @@ const handleRenderSaveBtn = () => {
 
 // Render the list of note titles
 const renderNoteList = async (notes) => {
+  console.log(`renderNoteList fired with ${notes}`)
   let jsonNotes = await notes.json();
   if (window.location.pathname === '/notes') {
     noteList.forEach((el) => (el.innerHTML = ''));
