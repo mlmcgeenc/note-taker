@@ -14,6 +14,11 @@
 ## Description
 A notes app written with Express.js
 
+
+https://user-images.githubusercontent.com/51179862/176918114-236ae09f-8e66-4e4b-83a5-db1680d345f3.mov
+
+
+
 ## Installation
 To install the project download the repo and navigate to the downloaded folder in your command line. Enter 'node index' to start the server and visit 'http://localhost:3001/' in a web broswer
 
