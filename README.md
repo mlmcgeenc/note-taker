@@ -21,7 +21,7 @@ https://user-images.githubusercontent.com/51179862/176918114-236ae09f-8e66-4e4b-
 
 
 ## Installation
-To install the project download the repo and navigate to the downloaded folder in your command line. Enter 'node index' to start the server and visit 'http://localhost:3001/' in a web broswer
+To install the project download the repo and navigate to the downloaded folder in your command line. Enter 'node server' to start the server and visit 'http://localhost:3001/' in a web broswer
 
 ## Usage
 Click on the 'Note Title' ot 'Note Text' fields to select them and begin typing your note. A floppy disk icon will appear in the upper right hand corner of the app that allows you to save your note. To read an existing note click on it's title in the column down the left habd side of the application. To delete a note click on the trash can icon inside the note's header.
